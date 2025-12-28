@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Ahmed Mohamed Youssef, a Data Analyst transforming raw data into actionable insights.">
+    <title>Ahmed Mohamed Youssef | Data Analyst Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons (using Phosphor Icons for a clean look, or FontAwesome if preferred, sticking to SVG/CDN for simplicity) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Ahmed<span>.Data</span></a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+                <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                <li><a href="#contact" class="btn-primary-sm" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                <i class="ph ph-sun"></i>
+            </button>
+            <button id="lang-toggle" aria-label="Toggle Language" class="lang-btn">
+                EN
+            </button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-content fade-in">
+                <p class="hero-subtitle" data-i18n="hero_subtitle">Hello, I'm</p>
+                <h1 class="hero-title" data-i18n="hero_title">Ahmed Mohamed Youssef</h1>
+                <h2 class="hero-role" data-i18n="hero_role">Data Analyst</h2>
+                <p class="hero-description" data-i18n="hero_desc">
+                    I transform raw data into clear, actionable insights that empower data-driven decision-making and
+                    measurable business growth.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" data-i18n="hero_btn_projects">View Projects</a>
+                    <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="about_title">About Me</h2>
+                <div class="about-grid fade-in">
+                    <div class="about-image">
+                        <img src="images/profile.png" alt="Ahmed Mohamed Youssef">
+                    </div>
+                    <div class="about-text">
+                        <p data-i18n="about_p1">
+                            Ahmed is a dedicated Data Analyst with practical, hands-on experience in data cleaning and
+                            preparation, exploratory analysis, KPI modeling, dashboard development, and insight
+                            reporting.
+                        </p>
+                        <p data-i18n="about_p2">
+                            He follows a structured, analysis-driven methodology — starting from understanding the
+                            business problem, collecting and cleaning data, performing deep exploratory analysis,
+                            visualizing trends, and finally converting insights into actionable recommendations. His
+                            work focuses on improving performance, optimizing conversions, and enabling smarter
+                            decision-making.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="skills_title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <!-- Analytics & BI -->
+                    <div class="skill-card fade-in">
+                        <div class="icon-box"><i class="ph ph-chart-bar"></i></div>
+                        <h3 data-i18n="skills_cat1">Analytics & BI</h3>
+                        <ul class="skill-list">
+                            <li>Excel / Google Sheets <span class="tag" data-i18n="skill_adv">Advanced</span></li>
+                            <li>Power BI <span class="tag" data-i18n="skill_adv">Advanced</span></li>
+                            <li>Tableau <span class="tag" data-i18n="skill_int">Intermediate</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Programming & Databases -->
+                    <div class="skill-card fade-in">
+                        <div class="icon-box"><i class="ph ph-code"></i></div>
+                        <h3 data-i18n="skills_cat2">Programming & DB</h3>
+                        <ul class="skill-list">
+                            <li>SQL (MySQL, PostgreSQL) <span class="tag" data-i18n="skill_int_adv">Int-Adv</span></li>
+                            <li>Python (Pandas, NumPy) <span class="tag" data-i18n="skill_int">Intermediate</span></li>
+                            <li>Git / GitHub <span class="tag" data-i18n="skill_vc">Version Control</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Data & Statistics -->
+                    <div class="skill-card fade-in">
+                        <div class="icon-box"><i class="ph ph-trend-up"></i></div>
+                        <h3 data-i18n="skills_cat3">Data & Statistics</h3>
+                        <ul class="skill-list">
+                            <li><span data-i18n="skill_cleaning">Data Cleaning & Prep</span> <span class="tag"
+                                    data-i18n="skill_adv">Advanced</span></li>
+                            <li><span data-i18n="skill_eda">EDA & Statistics</span> <span class="tag"
+                                    data-i18n="skill_int">Intermediate</span></li>
+                            <li data-i18n="skill_kpi">KPI Tracking & A/B Testing</li>
+                            <li data-i18n="skill_marketing">Marketing Analytics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="projects_title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <article class="project-card fade-in">
+                        <div class="project-content">
+                            <h3 data-i18n="proj1_title">E-Commerce Performance Analysis</h3>
+                            <p class="project-desc" data-i18n="proj1_desc">Identified a 35% checkout drop-off and
+                                optimized the conversion funnel, increasing conversion rate by 14% and significantly
+                                boosting monthly revenue.</p>
+                            <div class="project-tags">
+                                <span data-i18n="tag_conversion">Conversion Optimization</span>
+                                <span data-i18n="tag_funnel">Funnel Analysis</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card fade-in">
+                        <div class="project-content">
+                            <h3 data-i18n="proj2_title">KPI Dashboard for Service Company</h3>
+                            <p class="project-desc" data-i18n="proj2_desc">Built an interactive Power BI dashboard —
+                                reducing reporting time from 3 hours daily to just 10 minutes and improving
+                                decision-making speed.</p>
+                            <div class="project-tags">
+                                <span>Power BI</span>
+                                <span data-i18n="tag_automation">Automation</span>
+                                <span data-i18n="tag_dashboarding">Dashboarding</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card fade-in">
+                        <div class="project-content">
+                            <h3 data-i18n="proj3_title">Marketing Campaign Analysis</h3>
+                            <p class="project-desc" data-i18n="proj3_desc">Improved ROAS by 22% and reduced total
+                                campaign cost by 12% through segmentation, channel analysis, and A/B testing.</p>
+                            <div class="project-tags">
+                                <span data-i18n="tag_marketing">Marketing Analytics</span>
+                                <span data-i18n="tag_ab">A/B Testing</span>
+                                <span>ROAS</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="achievements-banner fade-in">
+                    <h3 data-i18n="achievements_title">Measurable Achievements</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <span class="number">10-20%</span>
+                            <span class="label" data-i18n="ach_uplift">Conversion Uplift</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="number">12%</span>
+                            <span class="label" data-i18n="ach_cost">Cost Reduction</span>
+                        </div>
+                        <div class="achievement-item">
+                            <span class="number">80%</span>
+                            <span class="label" data-i18n="ach_speed">Faster Reporting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="exp_title">Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-i18n="exp1_date">2023 — Present</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="exp1_role">Data Analyst — Freelance</h3>
+                            <ul>
+                                <li data-i18n="exp1_li1">Delivered end-to-end data analysis supporting business
+                                    optimization.</li>
+                                <li data-i18n="exp1_li2">Built interactive dashboards for real-time KPI tracking.</li>
+                                <li data-i18n="exp1_li3">Improved reporting efficiency and conversion insights across
+                                    multiple projects.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date" data-i18n="exp2_date">2022 — 2023</div>
+                        <div class="timeline-content">
+                            <h3 data-i18n="exp2_role">Junior Data Analyst — Internship</h3>
+                            <ul>
+                                <li data-i18n="exp2_li1">Assisted in data preparation, cleaning, and KPI development.
+                                </li>
+                                <li data-i18n="exp2_li2">Supported marketing and user-behavior analysis.</li>
+                                <li data-i18n="exp2_li3">Contributed to insight and performance reporting.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="services_title">Services Offered</h2>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <i class="ph ph-file-text"></i>
+                        <h3 data-i18n="serv1">Data Analysis & Reporting</h3>
+                    </div>
+                    <div class="service-card fade-in">
+                        <i class="ph ph-chart-pie-slice"></i>
+                        <h3 data-i18n="serv2">Dashboard Development</h3>
+                        <p>Power BI / Tableau</p>
+                    </div>
+                    <div class="service-card fade-in">
+                        <i class="ph ph-megaphone"></i>
+                        <h3 data-i18n="serv3">Marketing & Conversion Analytics</h3>
+                    </div>
+                    <div class="service-card fade-in">
+                        <i class="ph ph-strategy"></i>
+                        <h3 data-i18n="serv4">KPI Modeling & Consulting</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Objective -->
+        <section id="objective" class="section objective-section">
+            <div class="container fade-in">
+                <div class="objective-box">
+                    <i class="ph ph-quotes"></i>
+                    <p data-i18n="objective_text">Ahmed’s goal is to leverage data analytics to drive measurable
+                        business growth, improve decision-making efficiency, and continuously deliver insights that
+                        create real-world impact.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <h2 class="section-title fade-in" data-i18n="contact_title">Get In Touch</h2>
+                <div class="contact-wrapper fade-in">
+                    <form class="contact-form"
+                        onsubmit="event.preventDefault(); alert('Thank you for your message! This is a demo form.');">
+                        <div class="form-group">
+                            <label for="name" data-i18n="label_name">Name</label>
+                            <input type="text" id="name" required placeholder="Your Name"
+                                data-i18n-placeholder="ph_name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" data-i18n="label_email">Email</label>
+                            <input type="email" id="email" required placeholder="Your Email"
+                                data-i18n-placeholder="ph_email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" data-i18n="label_message">Message</label>
+                            <textarea id="message" rows="5" required placeholder="How can I help you?"
+                                data-i18n-placeholder="ph_message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" data-i18n="btn_send">Send Message</button>
+                    </form>
+
+                    <div class="contact-info">
+                        <h3>Connect with me</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/ahmed-yusuf-298843345" target="_blank"
+                                aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
+                            <a href="https://www.facebook.com/share/17qcCc7JsD/" target="_blank"
+                                aria-label="Facebook"><i class="ph ph-facebook-logo"></i> Facebook</a>
+                            <a href="https://wa.me/201060721264" target="_blank" aria-label="WhatsApp"><i
+                                    class="fab fa-whatsapp"></i> WhatsApp</a>
+                            <a href="https://t.me/ahmedmohamed231" target="_blank" aria-label="Telegram"><i
+                                    class="fab fa-telegram"></i> Telegram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p data-i18n="footer_copy">&copy; 2025 Ahmed Mohamed Youssef. All rights reserved.</p>
+            <a href="#hero" class="back-to-top"><span data-i18n="back_to_top">Back to Top</span> <i
+                    class="ph ph-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
